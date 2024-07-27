@@ -10,6 +10,20 @@ green='\e[0;32m'
 white='\033[0m'
 yellow='\033[0;33m'
 
+function cleanup() {
+    echo -e "\n"
+    echo -e "$yrllow << Cleaning Up! >> \n$white"
+    echo -e "\n"
+
+    rm -rf out/
+    rm -rf logs
+
+    echo -e "\n"
+    echo -e "$yrllow << Cleaned! >> \n$white"
+    echo -e "\n"
+}
+
+
 function build_kernel() {
     echo -e "\n"
     echo -e "$yrllow << building kernel >> \n$white"
@@ -29,4 +43,5 @@ function build_kernel() {
     fi
 }
 
+cleanup
 build_kernel
