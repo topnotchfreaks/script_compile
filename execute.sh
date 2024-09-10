@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WORK_DIR=$(pwd)
-KERNEL_DIR="topaz"
+KERNEL_DIR="kernel_msm-5.15"
 KERN_IMG=$WORK_DIR/out/android13-5.15/dist/Image
 
 # setup color
